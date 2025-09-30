@@ -1,0 +1,64 @@
+// Screen constants
+const SCREEN_WIDTH = 800;
+const SCREEN_HEIGHT = 600;
+const CELL_SIZE = 25;
+const FPS = 60;
+
+// Colors
+const BLACK = "#000000";
+const WHITE = "#FFFFFF";
+const YELLOW = "#FFFF00";
+const BLUE = "#0000FF";
+const RED = "#FF0000";
+const GREEN = "#00FF00";
+const PURPLE = "#800080";
+const ORANGE = "#FFA500";
+const PINK = "#FFC0CB";
+const CYAN = "#00FFFF";
+
+// Speeds
+const PACMAN_SPEED = 4.0;
+const GHOST_SPEED = 3.7;
+
+// Game States
+const GAME_PLAYING = "playing";
+const GAME_PAUSED = "paused";
+const GAME_WON = "won";
+const GAME_LOST = "lost";
+
+// Directions
+const UP = { x: 0, y: -1 };
+const DOWN = { x: 0, y: 1 };
+const LEFT = { x: -1, y: 0 };
+const RIGHT = { x: 1, y: 0 };
+const DIRECTIONS = [UP, DOWN, LEFT, RIGHT];
+
+const AI_DECISION_DELAY = 0.05;
+
+// Default map
+const DEFAULT_MAP = [
+  "############################",
+  "#..........####..........#",
+  "#.####.###.####.###.####.#",
+  "#.####.###...G..###.####.#",
+  "#......###.####.###......#",
+  "#.####.###.####.###.####.#",
+  "#.####.............####.#",
+  "####.####.#.##.#.####.####",
+  "#...........##...........#",
+  "#.####.####.##.####.####.#",
+  "#.####..##..  ..##..####.#",
+  "#.......##  G  ##.......#",
+  "####.##.##      ##.##.####",
+  "#...........    .........#",
+  "#.####P####.##.####.####.#",
+  "#.####..##..##..##..####.#",
+  "#...........##G..........#",
+  "####.####.#.##.#.####.####",
+  "#.####.............####.#",
+  "#.####.###.####.###.####.#",
+  "#......###.####.###......#",
+  "#.####.###......###.####.#",
+  "#..........####..........#",
+  "############################",
+];
